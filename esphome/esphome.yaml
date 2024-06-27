@@ -12,7 +12,7 @@ substitutions:
   # iaq_offset: "0" # bsec only
   # illuminance_offset: "0"
   # pressure_offset: "0"
-  temperature_offset: "-6"
+  #temperature_offset: "-6"
   # voc_offset: "0" # bsec only
 
   # LD2410(c) does not work? Please notice:
@@ -26,7 +26,7 @@ substitutions:
 
 packages:
   remote_package:
-    url: https://github.com/schluggi/AIOsense
+    url: https://github.com/thebhav/AIOsense.git
     ref: esphome-v3.0.1
     refresh: 1d
     files:
@@ -36,28 +36,28 @@ packages:
       # - esphome/packages/config/esp32-c3-mini.yaml
       # - esphome/packages/config/esp32-d1-mini.yaml
       # - esphome/packages/config/esp32-s2-mini.yaml
-      - esphome/packages/config/esp32-s3-mini.yaml
-      # - esphome/packages/config/esp8266-d1-mini.yaml
+      # - esphome/packages/config/esp32-s3-mini.yaml
+      - esphome/packages/config/esp8266-d1-mini.yaml
 
       # ----- modules -----
-      - esphome/packages/sensors/bh1750.yaml
+      # - esphome/packages/sensors/bh1750.yaml
       # - esphome/packages/sensors/bme280.yaml  # enable for bme280
-      - esphome/packages/sensors/bme68x_bsec.yaml  # disable for bme280
-      - esphome/packages/sensors/buzzer.yaml  # PCB >= v2.1.0
-      - esphome/packages/sensors/occupancy.yaml  # only if pir & mmWave are activated
-      - esphome/packages/sensors/pir.yaml
+      # - esphome/packages/sensors/bme68x_bsec.yaml  # disable for bme280
+      # - esphome/packages/sensors/buzzer.yaml  # PCB >= v2.1.0
+      # - esphome/packages/sensors/occupancy.yaml  # only if pir & mmWave are activated
+      # - esphome/packages/sensors/pir.yaml
 
       # ----- voice assistant (use rgb_led for esp32-c3 & esp32-s3 only-----
-      - esphome/packages/sensors/voice_assistant-rgb_led.yaml
+      # - esphome/packages/sensors/voice_assistant-rgb_led.yaml
       # - esphome/packages/sensors/voice_assistant-led.yaml
 
       # ----- led modules (use rgb_led for esp32-c3 & esp32-s3 only) -----
-      - esphome/packages/sensors/rgb_led.yaml
+      # - esphome/packages/sensors/rgb_led.yaml
       # - esphome/packages/sensors/led.yaml
 
       # ----- mmWave radar sensor -----
       # - esphome/packages/sensors/ld2410.yaml
-      - esphome/packages/sensors/sen0395.yaml
+      # - esphome/packages/sensors/sen0395.yaml
 
 
 # Enable Home Assistant API
