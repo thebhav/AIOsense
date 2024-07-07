@@ -4,8 +4,8 @@ substitutions:
   pir_pin: GPIO13
   pir_pin_mode: "INPUT"
   sen0395_io_pin: GPIO16
-  uart_rx_pin: GPIO3
-  uart_tx_pin: GPIO1
+  uart_rx_pin: GPIO1
+  uart_tx_pin: GPIO3
 
 esp8266:
   board: d1_mini
