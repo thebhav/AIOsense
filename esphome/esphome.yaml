@@ -56,7 +56,7 @@ packages:
       # - esphome/packages/sensors/led.yaml
 
       # ----- mmWave radar sensor -----
-      # - esphome/packages/sensors/ld2410.yaml
+      - esphome/packages/sensors/ld2410.yaml
       # - esphome/packages/sensors/sen0395.yaml
 
 
